@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nordly — Trending Products</title>
+<title>Southline — Sunny Days, Sorted</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0a0a0f;--surface:#111120;--border:#1e1e38;--accent:#4f6ef7;--green:#6bffaa;--red:#ff6b6b;--text:#f0f0f0;--muted:#888}
+:root{--bg:#0a1420;--surface:#111d2e;--border:#1c2c40;--accent:#ff8a5b;--green:#4ade80;--red:#f87171;--text:#eef3f8;--muted:#7c92a8}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-.ticker{background:#0d0d20;border-bottom:1px solid var(--border);padding:7px 0;overflow:hidden;white-space:nowrap}
+.ticker{background:#0d1826;border-bottom:1px solid var(--border);padding:7px 0;overflow:hidden;white-space:nowrap}
 .ticker-track{display:inline-block;animation:tick 35s linear infinite}
-.t-item{display:inline-block;margin:0 32px;font-size:12px;color:#7b9fff;font-weight:500}
+.t-item{display:inline-block;margin:0 32px;font-size:12px;color:#ffab84;font-weight:500}
 @keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 nav{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
 .logo{font-size:19px;font-weight:800}.logo span{color:var(--accent)}
 .cart-btn{background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
 .badge-count{background:#fff;color:var(--accent);border-radius:50%;width:18px;height:18px;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
-.hero{padding:52px 28px 32px;text-align:center;background:linear-gradient(160deg,#0e0e28 0%,var(--bg) 100%)}
+.hero{padding:52px 28px 32px;text-align:center;background:linear-gradient(160deg,#1c2440 0%,var(--bg) 100%)}
 .hero h1{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:10px}
 .hero h1 em{color:var(--accent);font-style:normal}
 .hero p{color:var(--muted);font-size:15px}
@@ -26,12 +26,12 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 2
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;padding:0 28px 48px;max-width:1200px;margin:0 auto}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;cursor:pointer;transition:all .2s}
 .card:hover{border-color:var(--accent);transform:translateY(-3px)}
-.card-img{width:100%;height:190px;background:linear-gradient(135deg,#1a1a2e,#0f0f20);display:flex;align-items:center;justify-content:center;font-size:52px}
+.card-img{width:100%;height:190px;background:linear-gradient(135deg,#1c2440,#111d2e);display:flex;align-items:center;justify-content:center;font-size:52px}
 .card-body{padding:14px}
 .pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 8px;border-radius:4px;margin-bottom:8px}
-.pill-hot{background:#2a1a1a;color:var(--red)}
-.pill-trending{background:#1a2a6e;color:#7b9fff}
-.pill-new{background:#1a2a1a;color:var(--green)}
+.pill-hot{background:#3a1f1a;color:var(--red)}
+.pill-trending{background:#3a2416;color:#ffab84}
+.pill-new{background:#153524;color:var(--green)}
 .card h3{font-size:14px;font-weight:600;line-height:1.3;margin-bottom:6px}
 .stars{font-size:12px;color:#f0a500;margin-bottom:2px}
 .sold{font-size:11px;color:#555}
@@ -42,17 +42,17 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 2
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:24px;position:relative}
 .modal-close{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer}
-.modal-img{width:100%;height:240px;background:linear-gradient(135deg,#1a1a2e,#0f0f20);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:80px;margin-bottom:18px}
+.modal-img{width:100%;height:240px;background:linear-gradient(135deg,#1c2440,#111d2e);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:80px;margin-bottom:18px}
 .modal h2{font-size:20px;font-weight:700;margin-bottom:10px}
 .modal-prices{display:flex;align-items:center;gap:14px;margin-bottom:14px}
 .modal-price{font-size:28px;font-weight:800}
-.profit-chip{background:#0d2b1a;color:var(--green);padding:5px 12px;border-radius:6px;font-size:12px;font-weight:600}
-.modal p{color:#aaa;font-size:14px;line-height:1.6;margin-bottom:16px}
+.profit-chip{background:#153524;color:var(--green);padding:5px 12px;border-radius:6px;font-size:12px;font-weight:600}
+.modal p{color:#7c92a8;font-size:14px;line-height:1.6;margin-bottom:16px}
 .qty-row{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .qty-btn{width:32px;height:32px;border-radius:6px;border:1px solid var(--border);background:none;color:var(--text);font-size:18px;cursor:pointer}
 .qty-n{width:32px;text-align:center;font-size:15px;font-weight:600}
 .modal-add{width:100%;padding:13px;background:var(--accent);border:none;border-radius:10px;color:#fff;font-weight:700;font-size:15px;cursor:pointer}
-.cart-panel{position:fixed;right:0;top:0;bottom:0;width:360px;background:#0d0d20;border-left:1px solid var(--border);z-index:200;padding:22px;overflow-y:auto;transform:translateX(100%);transition:transform .28s}
+.cart-panel{position:fixed;right:0;top:0;bottom:0;width:360px;background:#0d1826;border-left:1px solid var(--border);z-index:200;padding:22px;overflow-y:auto;transform:translateX(100%);transition:transform .28s}
 .cart-panel.open{transform:translateX(0)}
 .cart-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
 .cart-hd h2{font-size:17px;font-weight:700}
@@ -71,11 +71,11 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 2
 .checkout-modal h2{font-size:18px;font-weight:700;margin-bottom:20px}
 .form-group{margin-bottom:14px}
 .form-group label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px;font-weight:500}
-.form-group input{width:100%;background:#0a0a18;border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:14px;outline:none}
+.form-group input{width:100%;background:#0a1420;border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:var(--text);font-size:14px;outline:none}
 .form-group input:focus{border-color:var(--accent)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .section-title{font-size:11px;font-weight:600;color:var(--muted);margin:16px 0 10px;text-transform:uppercase;letter-spacing:.05em}
-.order-summary{background:#0a0a18;border-radius:8px;padding:14px;margin-bottom:16px}
+.order-summary{background:#0a1420;border-radius:8px;padding:14px;margin-bottom:16px}
 .os-item{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;color:var(--muted)}
 .os-total{display:flex;justify-content:space-between;font-size:15px;font-weight:700;color:var(--text);margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}
 .pay-btn{width:100%;padding:14px;background:var(--accent);border:none;border-radius:10px;color:#fff;font-weight:700;font-size:15px;cursor:pointer;margin-top:6px}
@@ -87,7 +87,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 2
 .success-screen h2{font-size:22px;font-weight:700;margin-bottom:8px;color:var(--green)}
 .success-screen p{color:var(--muted);font-size:14px;line-height:1.6}
 .order-id-box{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:13px;font-family:monospace;margin:16px 0;display:inline-block}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;z-index:500;pointer-events:none;animation:tin .25s ease;background:#0d2b1a;color:var(--green);border:1px solid #1a5a3a}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;z-index:500;pointer-events:none;animation:tin .25s ease;background:#153524;color:var(--green);border:1px solid #21563a}
 @keyframes tin{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
 .loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px;color:var(--muted);gap:16px}
 .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
@@ -98,12 +98,12 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 2
 <script src="https://js.stripe.com/v3/"></script>
 <div class="ticker"><div class="ticker-track" id="ticker"></div></div>
 <nav>
-  <div class="logo">NORD<span>LY</span></div>
+  <div class="logo">SOUTH<span>LINE</span></div>
   <button class="cart-btn" onclick="toggleCart()">🛒 Cart <span class="badge-count" id="cartCount">0</span></button>
 </nav>
 <div class="hero">
-  <h1>Today's <em>Hottest</em> Products</h1>
-  <p>Curated daily — fast, reliable shipping</p>
+  <h1>Sunny Days, <em>Sorted</em></h1>
+  <p>Curated picks — fast AU shipping</p>
 </div>
 <div class="filters" id="filters"></div>
 <div id="main"></div>
@@ -154,7 +154,7 @@ function renderGrid(){
         <h3>${p.name}</h3>
         <div class="stars">${'★'.repeat(Math.floor(p.rating||4.5))}${'☆'.repeat(5-Math.floor(p.rating||4.5))} ${p.rating||4.5}</div>
         <div class="sold">${(p.orders_count||0).toLocaleString()}+ sold</div>
-        <div class="card-foot"><span class="price">£${Number(p.price).toFixed(2)}</span><span class="margin-tag">Free UK delivery</span></div>
+        <div class="card-foot"><span class="price">$${Number(p.price).toFixed(2)}</span><span class="margin-tag">Free AU shipping</span></div>
         <button class="add-btn" onclick="event.stopPropagation();addToCart('${p.id}')">Add to Cart</button>
       </div>
     </div>`).join('')}</div>`;
@@ -167,16 +167,16 @@ function openProduct(id){
     <div class="modal-img">${p.image?`<img src="${p.image}" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px">`:(p.emoji||'📦')}</div>
     <span class="${pillClass(p.badge)}">${p.badge||'TRENDING'}</span>
     <h2 style="margin-top:8px">${p.name}</h2>
-    <div class="modal-prices"><span class="modal-price">£${Number(p.price).toFixed(2)}</span><span class="profit-chip">✓ In Stock</span></div>
+    <div class="modal-prices"><span class="modal-price">$${Number(p.price).toFixed(2)}</span><span class="profit-chip">✓ In Stock</span></div>
     <p>${p.description||'Premium quality product with fast worldwide shipping.'}</p>
     <div class="qty-row">
       <span style="color:var(--muted);font-size:13px">Qty:</span>
       <button class="qty-btn" onclick="changeQty(-1,'${p.id}')">−</button>
       <span class="qty-n" id="qtyN">1</span>
       <button class="qty-btn" onclick="changeQty(1,'${p.id}')">+</button>
-      <span style="color:var(--muted);font-size:13px">Total: <b id="qtyTotal" style="color:var(--text)">£${Number(p.price).toFixed(2)}</b></span>
+      <span style="color:var(--muted);font-size:13px">Total: <b id="qtyTotal" style="color:var(--text)">$${Number(p.price).toFixed(2)}</b></span>
     </div>
-    <button class="modal-add" onclick="addToCartQty('${p.id}')">Add to Cart — <span id="modalBtn">£${Number(p.price).toFixed(2)}</span></button>
+    <button class="modal-add" onclick="addToCartQty('${p.id}')">Add to Cart — <span id="modalBtn">$${Number(p.price).toFixed(2)}</span></button>
   </div>`);
 }
 
@@ -184,7 +184,7 @@ function changeQty(d,id){
   qty=Math.max(1,qty+d);
   const p=products.find(x=>x.id===id);
   document.getElementById('qtyN').textContent=qty;
-  const t='£'+(p.price*qty).toFixed(2);
+  const t='$'+(p.price*qty).toFixed(2);
   document.getElementById('qtyTotal').textContent=t;
   document.getElementById('modalBtn').textContent=t;
 }
@@ -206,13 +206,13 @@ function renderCart(){
   const ship=sub>=50?0:3.99;const total=sub+ship;
   el.innerHTML=cart.map(p=>`<div class="cart-item">
     <div class="ci-img">${p.emoji||'📦'}</div>
-    <div class="ci-info"><h4>${p.name}</h4><p>£${Number(p.price).toFixed(2)} × ${p.qty} = £${(p.price*p.qty).toFixed(2)}</p></div>
+    <div class="ci-info"><h4>${p.name}</h4><p>$${Number(p.price).toFixed(2)} × ${p.qty} = $${(p.price*p.qty).toFixed(2)}</p></div>
     <button class="ci-del" onclick="removeFromCart('${p.id}')">✕</button>
   </div>`).join('')+`
   <div class="cart-total-box">
-    <div class="ct-row"><span>Subtotal</span><span>£${sub.toFixed(2)}</span></div>
-    <div class="ct-row"><span>Shipping</span><span>${ship===0?'<span style="color:var(--green)">FREE</span>':'£'+ship.toFixed(2)}</span></div>
-    <div class="ct-row big"><span>Total</span><span>£${total.toFixed(2)}</span></div>
+    <div class="ct-row"><span>Subtotal</span><span>$${sub.toFixed(2)}</span></div>
+    <div class="ct-row"><span>Shipping</span><span>${ship===0?'<span style="color:var(--green)">FREE</span>':'$'+ship.toFixed(2)}</span></div>
+    <div class="ct-row big"><span>Total</span><span>$${total.toFixed(2)}</span></div>
   </div>
   <button class="checkout-btn" onclick="openCheckout()">Proceed to Checkout →</button>`;
 }
@@ -228,9 +228,9 @@ function openCheckout(){
     <button class="modal-close" onclick="closeOverlay()">✕</button>
     <h2>Checkout</h2>
     <div class="order-summary">
-      ${cart.map(p=>`<div class="os-item"><span>${p.emoji} ${p.name} ×${p.qty}</span><span>£${(p.price*p.qty).toFixed(2)}</span></div>`).join('')}
-      <div class="os-item"><span>Shipping</span><span>${ship===0?'FREE':'£'+ship.toFixed(2)}</span></div>
-      <div class="os-total"><span>Total</span><span>£${total.toFixed(2)}</span></div>
+      ${cart.map(p=>`<div class="os-item"><span>${p.emoji} ${p.name} ×${p.qty}</span><span>$${(p.price*p.qty).toFixed(2)}</span></div>`).join('')}
+      <div class="os-item"><span>Shipping</span><span>${ship===0?'FREE':'$'+ship.toFixed(2)}</span></div>
+      <div class="os-total"><span>Total</span><span>$${total.toFixed(2)}</span></div>
     </div>
     <div class="section-title">Your Details</div>
     <div class="form-row">
@@ -241,12 +241,13 @@ function openCheckout(){
     <div class="section-title">Shipping Address</div>
     <div class="form-group"><label>Address</label><input id="addr1" placeholder="123 Example Street"/></div>
     <div class="form-row">
-      <div class="form-group"><label>City</label><input id="city" placeholder="Manchester"/></div>
-      <div class="form-group"><label>Postcode</label><input id="postcode" placeholder="M1 1AA"/></div>
+      <div class="form-group"><label>City / Suburb</label><input id="city" placeholder="Bondi"/></div>
+      <div class="form-group"><label>State</label><input id="state" placeholder="NSW"/></div>
     </div>
+    <div class="form-group"><label>Postcode</label><input id="postcode" placeholder="2026"/></div>
     <div id="payError" class="err"></div>
-    <button class="pay-btn" id="payBtn" onclick="proceedToPayment(${total.toFixed(2)})">Continue to Payment — £${total.toFixed(2)}</button>
-    <p class="stripe-note">🔒 Secured by Stripe · Fast UK Delivery</p>
+    <button class="pay-btn" id="payBtn" onclick="proceedToPayment(${total.toFixed(2)})">Continue to Payment — $${total.toFixed(2)}</button>
+    <p class="stripe-note">🔒 Secured by Stripe · Fast AU Shipping</p>
   </div>`);
 }
 
@@ -256,15 +257,16 @@ async function proceedToPayment(total){
   const email=document.getElementById('email').value.trim();
   const addr1=document.getElementById('addr1').value.trim();
   const city=document.getElementById('city').value.trim();
+  const state=document.getElementById('state').value.trim();
   const postcode=document.getElementById('postcode').value.trim();
   const err=document.getElementById('payError');err.style.display='none';
-  if(!fname||!lname||!email||!addr1||!city||!postcode){err.textContent='Please fill in all fields.';err.style.display='block';return}
+  if(!fname||!lname||!email||!addr1||!city||!state||!postcode){err.textContent='Please fill in all fields.';err.style.display='block';return}
   if(!stripe){err.textContent='Payment is unavailable right now. Please try again shortly.';err.style.display='block';return}
   const btn=document.getElementById('payBtn');btn.disabled=true;btn.textContent='Loading payment...';
   try{
     const orderRes=await fetch(API+'/api/orders',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({customer_email:email,customer_name:fname+' '+lname,
-        shipping_address:{line1:addr1,city,postcode},
+        shipping_address:{line1:addr1,city,state,postcode,country:'AU'},
         items:cart.map(p=>({product_id:p.id,quantity:p.qty}))})});
     const orderData=await orderRes.json();
     if(!orderData.success)throw new Error(orderData.error||'Order failed');
@@ -280,18 +282,18 @@ async function proceedToPayment(total){
       <h2>Payment</h2>
       <div class="order-summary">
         <div class="os-item"><span>Order</span><span>${pendingOrderId}</span></div>
-        <div class="os-total"><span>Total</span><span>£${total}</span></div>
+        <div class="os-total"><span>Total</span><span>$${total}</span></div>
       </div>
       <div id="payment-element" style="margin-bottom:16px"></div>
       <div id="payError" class="err"></div>
-      <button class="pay-btn" id="payBtn">Pay £${total}</button>
+      <button class="pay-btn" id="payBtn">Pay $${total}</button>
       <p class="stripe-note">🔒 Secured by Stripe</p>
     </div>`);
     paymentElement.mount('#payment-element');
     document.getElementById('payBtn').onclick=()=>confirmPayment(total,fname);
   }catch(e){
     const btn2=document.getElementById('payBtn');
-    if(btn2){btn2.disabled=false;btn2.textContent='Continue to Payment — £'+total}
+    if(btn2){btn2.disabled=false;btn2.textContent='Continue to Payment — $'+total}
     err.textContent=e.message;err.style.display='block';
   }
 }
@@ -301,7 +303,7 @@ async function confirmPayment(total,fname){
   const btn=document.getElementById('payBtn');btn.disabled=true;btn.textContent='Processing...';
   const {error,paymentIntent}=await stripe.confirmPayment({elements,redirect:'if_required'});
   if(error){
-    btn.disabled=false;btn.textContent='Pay £'+total;
+    btn.disabled=false;btn.textContent='Pay $'+total;
     err.textContent=error.message||'Payment failed. Please try again.';err.style.display='block';
     return;
   }
@@ -313,12 +315,12 @@ async function confirmPayment(total,fname){
         <h2>Order Confirmed!</h2>
         <p>Thanks ${fname}! Your order is being processed and will be dispatched shortly.</p>
         <div class="order-id-box">${orderId}</div>
-        <p style="color:var(--muted);font-size:13px">Total: <b style="color:var(--text)">£${total}</b></p>
+        <p style="color:var(--muted);font-size:13px">Total: <b style="color:var(--text)">$${total}</b></p>
         <br><button class="pay-btn" onclick="closeOverlay()" style="margin-top:8px">Continue Shopping</button>
       </div>
     </div>`;
   }else{
-    btn.disabled=false;btn.textContent='Pay £'+total;
+    btn.disabled=false;btn.textContent='Pay $'+total;
     err.textContent='Payment did not complete. Please try again.';err.style.display='block';
   }
 }
@@ -329,7 +331,7 @@ function overlayClick(e){if(e.target===document.getElementById('overlay'))closeO
 function toast(msg){const el=document.createElement('div');el.className='toast';el.textContent=msg;document.body.appendChild(el);setTimeout(()=>el.remove(),2200)}
 
 function renderTicker(){
-  const items=['🔥 Trending products updated daily','⚡ Free shipping over £50','🚚 Fast dispatch','🌍 Ships worldwide','⭐ 4.8 avg rating','🔒 Secure checkout'];
+  const items=['🌊 New drops every week','⚡ Free shipping over $50','🚚 Fast AU dispatch','🌍 Ships worldwide','⭐ 4.8 avg rating','🔒 Secure checkout'];
   document.getElementById('ticker').innerHTML=[...items,...items].map(i=>`<span class="t-item">● ${i}</span>`).join('');
 }
 
