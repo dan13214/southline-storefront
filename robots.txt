@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://southline-storefront.vercel.app/sitemap.xml
